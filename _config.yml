@@ -1,5 +1,5 @@
 site: Woss
-url: //acwoss.github.io
+url: https:////woss.eng.br
 title: Anderson Carlos Woss
 description: Tech Leader
 twitter:
@@ -11,7 +11,7 @@ author:
   name: Anderson Carlos Woss
   avatar:
   email: acwoss@gmail.com
-  url: //acwoss.github.io
+  url: https:////woss.eng.br
 permalink: pretty
 
 baseurl: ""
@@ -32,7 +32,8 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-sitemap  
+  - jekyll-sitemap 
+  - jekyll-analytics
 
 collections:
   pages:
@@ -60,3 +61,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-110121463-1
