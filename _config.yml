@@ -1,22 +1,22 @@
-site: Sidey
-url: #yoururl
-title: Sidey
-description: Simple and minimalistic jekyll blogging theme.
+site: Woss
+url: //acwoss.github.io
+title: Anderson Carlos Woss
+description: Tech Leader
 twitter:
-  username: #yourusername
+  username: acwoss
   card: summary
-  creator: #yourusername
+  creator: acwoss
 author:
-  twitter: #yourusername
-  name: #yourusername
+  twitter: acwoss
+  name: Anderson Carlos Woss
   avatar:
-  email: #youremail
-  url: #yoururl
+  email: acwoss@gmail.com
+  url: //acwoss.github.io
 permalink: pretty
 
 baseurl: ""
 
-highlighter: none
+highlighter: rouge
 
 exclude:
   - .jekyll-cache
