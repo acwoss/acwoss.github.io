@@ -1,7 +1,7 @@
 site: Woss
-url: https:////woss.eng.br
+url: https://woss.eng.br
 title: Anderson Carlos Woss
-description: Tech Leader
+description: Engenheiro, Desenvolvedor e Lider Técnico
 twitter:
   username: acwoss
   card: summary
@@ -11,7 +11,7 @@ author:
   name: Anderson Carlos Woss
   avatar:
   email: acwoss@gmail.com
-  url: https:////woss.eng.br
+  url: https://woss.eng.br
 permalink: pretty
 
 baseurl: ""
