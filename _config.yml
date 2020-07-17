@@ -32,8 +32,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-sitemap 
-  - jekyll-analytics
+  - jekyll-sitemap
 
 collections:
   pages:
@@ -61,7 +60,3 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-
-jekyll_analytics:
-  GoogleAnalytics:
-    id: UA-110121463-1
