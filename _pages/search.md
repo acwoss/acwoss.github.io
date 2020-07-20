@@ -26,8 +26,12 @@ title: Search
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="Search...">
-<ol id="results-container"></ol>
+<input type="text" id="search-input" placeholder="Buscar por...">
+<ol id="results-container">
+{% for post in site.posts %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time></li>
+{% endfor %}
+</ol>
 </div>
 
 <!-- Script pointing to search-script.js -->
@@ -40,9 +44,9 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-  noResultsText: 'No results found',
-  limit: 10,
-  fuzzy: false,
-  exclude: ['Welcome']
+  noResultsText: 'Nenhum artigo encontrado',
+  limit: 100,
+  fuzzy: true,
+  exclude: []
 })
 </script>
