@@ -4,6 +4,7 @@ title: Primeira publicação
 description: Teste de publicação
 summary: Teste de publicação.
 tags: [teste]
+category: python
 ---
 
 Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole **YOLO**, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.
@@ -79,14 +80,6 @@ Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast
 3. Integer molestie lorem at massa
 
 Actually hella you probably haven't heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.
-
-# Tabelas
-
-| Option | Description                                                  |
-| ------ | ------------------------------------------------------------ |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files.                         |
 
 ## Códigos
 
