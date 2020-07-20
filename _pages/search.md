@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Search
+title: Buscar artigos
 ---
 
 <style>
@@ -27,11 +27,7 @@ title: Search
 <!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="Buscar por...">
-<ol id="results-container">
-{% for post in site.posts %}
-<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time></li>
-{% endfor %}
-</ol>
+<ol id="results-container"></ol>
 </div>
 
 <!-- Script pointing to search-script.js -->
