@@ -1,5 +1,6 @@
-source "https://rubygems.org"
-gem 'jekyll'
+source 'https://rubygems.org'
+
+gem 'bundler'
+gem 'jekyll', '~> 4.0'
 gem 'jekyll-paginate'
-gem 'jekyll-seo-tag'
-gem 'jekyll-sitemap'
+gem 'jekyll-tagging'

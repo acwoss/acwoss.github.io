@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<section class="posts">
-<ul>
-{% for post in site.posts %}
-<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time></li>
-{% endfor %}
-</ul>
-</section>
+<div class='o-wrapper'>
+  <div class='o-grid'>
+    {% for post in paginator.posts %}
+      {% include post-card.liquid %}
+    {% endfor %}
+  </div>
 
+  <div class='o-grid'>
+    {% include pagination.html %}
+  </div>
+</div>

@@ -1,10 +1,9 @@
-<header role="banner">
-      <!--<h1 class="logo">{{ site.title }}</h1>-->
-      <nav role="navigation">
-<ul>
-   {% for item in site.data.navigation.links %}
-      <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
-   {% endfor %}
-</ul>
-</nav>
-</header>
+{% for page in site.pages %}
+  {% unless page.name == '404.md' %}
+    {% if page.title %}
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
+      </li>
+    {% endif %}
+  {% endunless %}
+{% endfor %}

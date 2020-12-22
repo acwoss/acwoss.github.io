@@ -1,62 +1,48 @@
-site: Woss
-url: https://woss.eng.br
-title: Anderson Carlos Woss
-description: Engenheiro, Desenvolvedor e Lider Técnico
-twitter:
-  username: acwoss
-  card: summary
-  creator: acwoss
-author:
-  twitter: acwoss
-  name: Anderson Carlos Woss
-  avatar:
-  email: acwoss@gmail.com
-  url: https://woss.eng.br
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:       Type
+email:       ''
+description: ''
+baseurl:     '' # The subpath of your site, e.g. /blog
+url:         'https://type-jekyll.aspirethemes.com/' # The base hostname & protocol for your site
+twitter:     ''
+github:      ''
+instagram:   ''
+facebook:    ''
+
+markdown:  kramdown
 permalink: pretty
-
-baseurl: ""
-
-highlighter: rouge
-
-exclude:
-  - .jekyll-cache
-  
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
+paginate:  10
 
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  style: compressed
 
 plugins:
   - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
+  - jekyll/tagging
 
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:slug
-  
+include:
+  - _pages
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+# Pages path
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: '_pages'
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      permalink: /:basename:output_ext
