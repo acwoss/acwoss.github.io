@@ -1,48 +1,41 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title:       Type
-email:       ''
-description: ''
-baseurl:     '' # The subpath of your site, e.g. /blog
-url:         'https://type-jekyll.aspirethemes.com/' # The base hostname & protocol for your site
-twitter:     ''
-github:      ''
-instagram:   ''
-facebook:    ''
+title:          Tale
+description:    "Minimal Jekyll theme for storytellers"
+baseurl:        "/tale"
+url:            "https://chesterhow.github.io"
 
-markdown:  kramdown
-permalink: pretty
-paginate:  10
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
 
-sass:
-  style: compressed
+# Author
+author:
+  name:         Chester How
+  url:          https://chester.how
+  email:        chesterhow@gmail.com
 
-plugins:
-  - jekyll-paginate
-  - jekyll/tagging
-
+# Build settings
+markdown:       kramdown
 include:
   - _pages
 
-exclude:
-  - vendor
-  - Gemfile
-  - Gemfile.lock
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
 
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
 
-# Pages path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale

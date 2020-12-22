@@ -1,6 +1,4 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'bundler'
-gem 'jekyll', '~> 4.0'
-gem 'jekyll-paginate'
-gem 'jekyll-tagging'
+source "https://rubygems.org"
+gemspec
